@@ -69,3 +69,11 @@ target_link_libraries(VLFD libusb "-framework CoreFoundation" "-framework IOKit"
 else()
 target_link_libraries(VLFD libusb)
 endif()
+
+# Set the output name, prefix, and suffix based on OS and architecture
+set(target_name "VLFDLibUSB-${myos}-${arch}")
+set_target_properties(VLFD PROPERTIES
+    PREFIX "lib"                      # Prepend "lib" for static libraries
+    OUTPUT_NAME ${target_name}         # Output name will be "VLFDLibUSB-linux-x64"
+    # SUFFIX ".a"                       # Suffix for static library (.a)
+)
