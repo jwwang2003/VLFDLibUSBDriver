@@ -11,9 +11,3 @@ make
 ```
 
 ---
-
-All credit goes to [Zhengyi Zhang](https://github.com/0xtaruhi) for developing the driver.
-
-## Contributors
-
-[0xtaruhi](https://github.com/0xtaruhi)- Main Developer
